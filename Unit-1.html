@@ -1,0 +1,22 @@
+<!-- write one json string with date property and print date in indian standard time while clicking on button -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-1</title>
+ </head>
+ <body>
+    <p id="demo"></p>
+    <button onclick="fun()">Show</button>
+    <script>
+        function fun(){
+            let text='{"name":"abc","place":"ahemdabad","DOB":"2006-09-24"}'
+            let obj=JSON.parse(text)
+            obj.DOB=new Date(obj.DOB)
+            document.getElementById("demo").innerHTML="Birthday of "+obj.name+" is "+obj.DOB
+        }
+    </script>
+ </body>
+ </html>
+
