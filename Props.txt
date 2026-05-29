@@ -1,0 +1,16 @@
+#Syntax:-
+*Passing value
+-----xxxx-----
+-->  <Componentname property="value1"/>
+
+-->  <Componentname property="value2"/>
+
+#layout/accepting values
+----------xxxxx----------
+
+-->  function name(props){
+    return(
+        <h1>{props.property}</h1>
+    )
+}
+export default name
